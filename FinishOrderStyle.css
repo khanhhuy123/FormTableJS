@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 100px auto 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    margin: 0px;
+}
+
+.header{
+    grid-area: 1 / 1 / 2 / 6; 
+    border: 1px solid #000;
+}
+
+.information-area{
+    grid-area: 2 / 1 / 6 / 4; 
+    border: 1px solid #000;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.receipt-area{
+    grid-area: 2 / 4 / 6 / 6; 
+    border: 1px solid #000;
+    height: 100%;
+}
+
+.receipt{ 
+    width: 68.5%;
+    min-height: auto;
+    margin: 20px auto 0px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    min-width: 225px;
+}
+
+.receipt-table{
+    margin: 0px auto 0px;
+}
+
+#total-price{
+    margin: 2%;
+}
+
+th{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 50px;
+}
+
+th:first-child{
+    width: 20%;
+
+}
+th:nth-child(2){
+    width: 50%;
+}
+th:last-child{
+    width: 10%;
+}
+
+td{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;  
+    height: 30px;
+}
+td:first-child{
+    width: 20%;
+}
+td:nth-child(2){
+    width: 60%;
+}
+td:last-child{
+    width: 20%;
+}
+
+
+.information{
+    border: 1px solid #000;
+    height: 100%;   
+    width: 90%;
+    margin: 0px auto 0px;
+}
+
+
+
+#ReturnBtn{
+    margin-top: 20px;
+}
